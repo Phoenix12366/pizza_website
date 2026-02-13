@@ -1,0 +1,252 @@
+* {
+	font-family: "Open sans", sans-serif;
+	margin: 0;
+	padding: 0;
+}
+body {
+	background-color: #f9f9f9;
+}
+
+header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 10px 20px;
+	background-color: #ffcc00;
+	margin-left: 13px;
+	margin-right: 13px;
+}
+header a {
+	text-decoration: none;
+	color: #333;
+	padding: 10px 15px;
+	white-space: nowrap;
+	background-color: #fff;
+	border-radius: 20px;
+	cursor: pointer;
+}
+header a:hover {
+	background-color: #f0f0f0;
+}
+.logo {
+	width: 50px; /* Задайте ширину для логотипа */
+	height: auto;
+}
+#auth-button {
+	background-color: #fff;
+	border: none;
+	border-radius: 20px;
+	padding: 10px 20px;
+	cursor: pointer;
+	font-size: 16px;
+	text-align: center;
+
+}
+#auth-button:hover {
+	background-color: #f0f0f0;
+}
+
+#openModal {
+    padding: 5px 5px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #ffcc00; /* Дополнительный цвет */
+    border: none;
+    color: #fff;
+}
+
+.modal {
+    display: none;
+    position: fixed; 
+    z-index: 1; 
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%; 
+    background-color: rgba(0, 0, 0, 0.4); 
+}
+
+.modal-content {
+    background-color: #fff; /* Основной цвет */
+    margin: 15% auto; 
+    padding: 20px;
+    border: 1px solid #888;
+    width: 400px; 
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.modal1 {
+    display: none;
+    position: fixed; 
+    z-index: 1; 
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%; 
+    background-color: rgba(0, 0, 0, 0.4); 
+}
+
+.modal-content1 {
+    background-color: #fff; /* Основной цвет */
+    margin: 15% auto; 
+    padding: 20px;
+    border: 1px solid #888;
+    width: 400px; 
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.close1 {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close1:hover,
+.close1:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-top: 10px;
+}
+
+input {
+    padding: 8px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button[type="submit"] {
+    margin-top: 15px;
+    padding: 10px;
+    background-color: #ffcc00; /* Дополнительный цвет */
+    border: none;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button[type="submit"]:hover {
+    background-color: #e6b800; /* Темнее дополнительного цвета */
+}
+
+.au_reg_button {
+	display: flex;
+	flex-direction: column;
+}
+
+.menu {
+	display: flex;
+	overflow-x: auto;
+	background-color: rgba(255, 255, 255, 1);
+	padding: 10px 0;
+	position: sticky;
+	top: 0px;
+	margin-left: 13px;
+	margin-right: 13px;
+}
+.menu a {
+	padding: 10px 15px;
+	text-decoration: none;
+	color: #333;
+	white-space: nowrap;
+}
+.menu a:hover {
+	background-color: #f0f0f0;
+}
+.cart-button {
+	border: none;
+	border-radius: 20px;
+	padding: 10px 20px;
+	cursor: pointer;
+	font-size: 16px;
+	margin-left: auto;
+	background-color: rgba(255, 204, 0, 0.8);
+	margin-right: 8px;
+}
+.cart-button:hover {
+	background-color: rgba(255, 183, 0, 0.8);
+}
+footer {
+	background-color: #ffcc00;
+	text-align: center;
+	padding: 10px 0;
+}
+footer a {
+	margin: 0 10px;
+	text-decoration: none;
+	color: #333;
+}
+.section {
+	padding: 20px;
+	margin: 10px;
+	background-color: #fff;
+	border-radius: 5px;
+	box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+.products-row {
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	margin: 0 -10px; /* Убираем отступы по бокам */
+}
+.product {
+	font-size: 16px;
+	max-width: 300px;
+	min-width: 270px;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-end;
+	height: 410px;
+	flex: 1 1 calc(25% - 20px); /* Четыре продукта в ряду */
+	margin: 10px;
+	padding: 10px;
+	border: 1px solid #ddd;
+	border-radius: 5px;
+	box-sizing: border-box; /* Учитываем отступы и границы в ширине */
+}
+
+.product img {
+	width: 100%;
+	height: auto;
+	border-radius: 5px;
+}
+
+.ingredients {
+	font-size: 14px;
+	overflow-y: scroll;
+}
+
+.add-to-cart {
+	background-color: #ffcc00;
+	border: none;
+	border-radius: 5px;
+	padding: 5px 10px;
+	cursor: pointer;
+}
+

@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+		<link rel="stylesheet" type="text/css" href="style.css">
+		<title>Пиццерия</title>
+	</head>
+	<body>
+
+	<header>
+		<div>
+			<a href="#about" style="margin-right: 5px">О нас</a>
+			<a href="#contacts">Контакты</a>
+		</div>
+		<img src="img/logo.png" alt="Логотип Пиццерии" class="logo">
+		<div class="au_reg_button">
+			<button id="auth-button">Вход</button>
+			<button id="openModal">Регистрация</button>
+		</div>
+
+	    <div id="modal" class="modal">
+	        <div class="modal-content">
+	            <span class="close" id="closeModal">&times;</span>
+	            <h2>Регистрация</h2>
+	            <form id="registrationForm">
+	                <label for="firstName">Имя:</label>
+	                <input type="text" id="firstName" required>
+
+	                <label for="lastName">Фамилия:</label>
+	                <input type="text" id="lastName" required>
+
+	                <label for="middleName">Отчество:</label>
+	                <input type="text" id="middleName">
+
+	                <label for="phone">Телефон:</label>
+	                <input type="tel" id="phone" required>
+
+	                <label for="email">Email:</label>
+	                <input type="email" id="email" required>
+
+	                <button type="submit">Зарегистрироваться</button>
+	            </form>
+	        </div>
+	    </div>
+	    <div id="modal1" class="modal1">
+	        <div class="modal-content1">
+	            <span class="close1" id="closeModal1">&times;</span>
+	            <h2>Вход</h2>
+	            <form id="authForm">
+	                <label for="phone">Телефон:</label>
+	                <input type="tel" id="phone" required>
+	                <button type="submit">Войти</button>
+	            </form>
+	        </div>
+	    </div>
+	</header>
+
+	<div class="menu">
+		<a href="#combo">Комбо</a>
+		<a href="#pizza">Пицца</a>
+		<a href="#snacks">Закуски</a>
+		<a href="#drinks">Напитки</a>
+		<a href="#desserts">Дессерты</a>
+		<a href="#sauces">Соусы</a>
+		<button class="cart-button">Корзина</button>
+	</div>
+
+	<div class="section" id="combo">
+		<h2>Комбо</h2>
+		<div class="products-row">
+			<div class="product">
+				<img src="https://media.dodostatic.net/image/r:292x292/11EF112C05B1B9C193648449783C1A82.avif" alt="Комбо 1">
+				<span>Комбо 1: Комбо Завтрак на двоих</span>
+				<span class="ingredients">Ингредиенты: Омлет с ветчиной и грибами: ветчина, шампиньоны, моцарелла. Кофе: сливки, кофеин. Омлет с беконом: бекон, моцерелла, томаты</span>
+				<span>Цена: 500 руб.</span>
+				<button class="add-to-cart">Добавить в корзину</button>
+			</div>
+			<div class="product">
+				<img src="https://media.dodostatic.net/image/r:292x292/11EE7E21971194BA8CD8A49301256FC4.avif" alt="Комбо 2">
+				<span>Комбо 2: 2 пиццы</span>
+				<span class="ingredients">Ингредиенты: Ветчина, грибы</span>
+				<span>Цена: 550 руб.</span>
+				<button class="add-to-cart">Добавить в корзину</button>
+			</div>
+			<div class="product">
+				<img src="https://media.dodostatic.net/image/r:292x292/11EE7E219680B50B85AD6F6813EA1902.avif" alt="Комбо 3">
+				<span>Комбо 3: 3 пиццы</span>
+				<span class="ingredients">Ингредиенты: Чеддер, ананасы</span>
+				<span>Цена: 600 руб.</span>
+				<button class="add-to-cart">Добавить в корзину</button>
+			</div>
+			<div class="product">
+				<img src="https://media.dodostatic.net/image/r:292x292/11EE7E219288C341B5C27167329C2C9A.avif" alt="Комбо 4">
+				<span>Комбо 4: 2 пиццы и напиток</span>
+				<span class="ingredients">Ингредиенты: Базилик, томатный соус</span>
+				<span>Цена: 520 руб.</span>
+				<button class="add-to-cart">Добавить в корзину</button>
+			</div>
+		</div>
+	</div>
+
+	<div class="section" id="pizza">
+		<h2>Пицца</h2>
+		<div class="products-row">
+			<div class="product">
+				<img src="https://media.dodostatic.net/image/r:292x292/11EF438E93884BFEBFE79D11095AE2D4.avif" alt="Маргарита">
+				<span>Маргарита</span>
+				<span class="ingredients">Ингредиенты: Томатный соус, моцарелла</span>
+				<span>Цена: 300 руб.</span>
+				<button class="add-to-cart">Добавить в корзину</button>
+			</div>
+			<div class="product">
+				<img src="pepperoni.jpg" alt="Пепперони">
+				<span>Пепперони</span>
+				<span class="ingredients">Ингредиенты: Томатный соус, сыр, пепперони</span>
+				<span>Цена: 350 руб.</span>
+				<button class="add-to-cart">Добавить в корзину</button>
+			</div>
+			<div class="product">
+				<img src="hawaiian.jpg" alt="Гавайская">
+				<span>Гавайская</span>
+				<span class="ingredients">Ингредиенты: Ветчина, ананасы</span>
+				<span>Цена: 400 руб.</span>
+				<button class="add-to-cart">Добавить в корзину</button>
+			</div>
+			<div class="product">
+				<img src="vegetarian.jpg" alt="Вегетарианская">
+				<span>Вегетарианская</span>
+				<span class="ingredients">Ингредиенты: Овощи, моцарелла</span>
+				<span>Цена: 350 руб.</span>
+				<button class="add-to-cart">Добавить в корзину</button>
+			</div>
+		</div>
+	</div>
+
+	<div class="section" id="snacks">
+		<h2>Закуски</h2>
+		<div class="products-row">
+			<div class="product">
+				<img src="nuggets.jpg" alt="Наггетсы">
+				<span>Наггетсы</span>
+				<span class="ingredients">Ингредиенты: Курица, панировка</span>
+				<span>Цена: 200 руб.</span>
+				<button class="add-to-cart">Добавить в корзину</button>
+			</div>
+			<div class="product">
+				<img src="fries.jpg" alt="Картофель фри">
+				<span>Картофель фри</span>
+				<span class="ingredients">Ингредиенты: Картофель, соль</span>
+				<span>Цена: 150 руб.</span>
+				<button class="add-to-cart">Добавить в корзину</button>
+			</div>
+			<div class="product">
+				<img src="wings.jpg" alt="Куриные крылышки">
+				<span>Куриные крылышки</span>
+				<span class="ingredients">Ингредиенты: Курица, соус</span>
+				<span>Цена: 250 руб.</span>
+				<button class="add-to-cart">Добавить в корзину</button>
+			</div>
+			<div class="product">
+				<img src="salad.jpg" alt="Салат">
+				<span>Салат</span>
+				<span class="ingredients">Ингредиенты: Овощи, заправка</span>
+				<span>Цена: 180 руб.</span>
+				<button class="add-to-cart">Добавить в корзину</button>
+			</div>
+		</div>
+	</div>
+
+	<div class="section" id="drinks">
+		<h2>Напитки</h2>
+		<div class="products-row">
+			<div class="product">
+				<img src="coke.jpg" alt="Кока-Кола">
+				<span>Кока-Кола</span>
+				<span>Цена: 100 руб.</span>
+				<button class="add-to-cart">Добавить в корзину</button>
+			</div>
+			<div class="product">
+				<img src="sprite.jpg" alt="Спрайт">
+				<span>Спрайт</span>
+				<span>Цена: 100 руб.</span>
+				<button class="add-to-cart">Добавить в корзину</button>
+			</div>
+			<div class="product">
+				<img src="fanta.jpg" alt="Фанта">
+				<span>Фанта</span>
+				<span>Цена: 100 руб.</span>
+				<button class="add-to-cart">Добавить в корзину</button>
+			</div>
+			<div class="product">
+				<img src="water.jpg" alt="Вода">
+				<span>Вода</span>
+				<span>Цена: 50 руб.</span>
+				<button class="add-to-cart">Добавить в корзину</button>
+			</div>
+		</div>
+	</div>
+
+	<div class="section" id="desserts">
+		<h2>Дессерты</h2>
+		<div class="products-row">
+			<div class="product">
+				<img src="tiramisu.jpg" alt="Тирамису">
+				<span>Тирамису</span>
+				<span>Цена: 250 руб.</span>
+				<button class="add-to-cart">Добавить в корзину</button>
+			</div>
+			<div class="product">
+				<img src="cheesecake.jpg" alt="Чизкейк">
+				<span>Чизкейк</span>
+				<span>Цена: 300 руб.</span>
+				<button class="add-to-cart">Добавить в корзину</button>
+			</div>
+			<div class="product">
+				<img src="brownie.jpg" alt="Брауни">
+				<span>Брауни</span>
+				<span>Цена: 200 руб.</span>
+				<button class="add-to-cart">Добавить в корзину</button>
+			</div>
+				<div class="product">
+				<img src="icecream.jpg" alt="Мороженое">
+				<span>Мороженое</span>
+				<span>Цена: 150 руб.</span>
+				<button class="add-to-cart">Добавить в корзину</button>
+			</div>
+		</div>
+	</div>
+
+	<div class="section" id="sauces">
+		<h2>Соусы</h2>
+		<div class="products-row">
+			<div class="product">
+				<img src="bbq.jpg" alt="Соус BBQ">
+				<span>Соус BBQ</span>
+				<span>Цена: 50 руб.</span>
+				<button class="add-to-cart">Добавить в корзину</button>
+			</div>
+				<div class="product">
+				<img src="ketchup.jpg" alt="Кетчуп">
+				<span>Кетчуп</span>
+				<span>Цена: 30 руб.</span>
+				<button class="add-to-cart">Добавить в корзину</button>
+			</div>
+				<div class="product">
+				<img src="mayo.jpg" alt="Майонез">
+				<span>Майонез</span>
+				<span>Цена: 30 руб.</span>
+				<button class="add-to-cart">Добавить в корзину</button>
+			</div>
+				<div class="product">
+				<img src="sourcream.jpg" alt="Сметана">
+				<span>Сметана</span>
+				<span>Цена: 40 руб.</span>
+				<button class="add-to-cart">Добавить в корзину</button>
+			</div>
+		</div>
+	</div>
+
+	<footer>
+		<span id="about">О нас</span>
+		<span id="contacts">Контакты</span>
+	</footer>
+	<script src="script.js"></script>
+	<script src="auth.js"></script>
+	</body>
+</html>
